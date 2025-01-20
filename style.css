@@ -1,0 +1,323 @@
+/* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
+
+:root {
+    --cor-de-fundo: #e2cfcf; /*cor de fundo do site (RosyBrown)*/
+    --cor-de-fundo-menu: #FFE4E1; /*cor de fundo do menu (Rosa Enevoada)*/
+    --cor-do-link: #000000;
+    --cor-texto: #333333;
+    --padding-padrao: 16px;
+}
+
+
+body {
+    margin: 10%, 15%;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-texto);   
+}
+
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+/* ------------------------------ Seção Menu -------------------------------*/
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-padrao);
+    background-color: var(--cor-de-fundo-menu);
+}
+
+.cabecalho__logo {
+   /* max-width: 80px;  |Ajuste para telas pequenas */
+   font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+.cabecalho__titulo {
+    font-size: 0.1rem;
+    text-align: center;
+}
+
+.navegacao__lista {
+    display: none;
+}
+
+.navegacao__elemento a {
+    font-size: 0.9rem;
+}
+/* ------------------------------ Seção Apresentação ------------------------------*/
+
+.principal {
+    padding: var(--padding-padrao);
+}
+
+.principal__titulo {
+    font-size: 2rem;
+    color: var(--cor-primaria);
+}
+
+.principal__descricao {
+    font-size: 1.25rem;
+    color: var(--cor-texto);
+    margin-top: var(--padding-padrao);
+}
+
+.apresentacao {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    /* height: 100vh; */
+    gap: 50px;
+}
+
+.redes__elemento {
+    font-size: 1.2rem;  
+    color: var(--cor-primaria);
+    gap: 50px;
+}
+
+
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+
+.sobre-mim {
+    padding: var(--padding-padrao);
+    background-color: var(--cor-de-fundo-menu);
+    border-radius: 8px;
+    margin-top: var(--padding-padrao);
+}
+
+.sobre-mim__titulo {
+    font-size: 1.75rem;
+    color: var(--cor-primaria);
+}
+
+.sobre-mim__descricao {
+    text-align: justify;
+    font-size: 1rem;
+    color: var(--cor-texto);
+    margin-top: var(--padding-padrao);
+}
+
+/*------------------------------ Seção de Habilidades ------------------------------*/
+
+.habilidades {
+    padding: var(--padding-padrao);
+    background-color: var(--cor-de-fundo-menu);
+    border-radius: 8px;
+    margin-top: var(--padding-padrao);
+}
+
+.habilidades__titulo {
+    font-size: 1.75rem;
+    color: var(--cor-primaria);
+}
+
+.habilidades__lista {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25%;
+    margin-top: var(--padding-padrao);
+    font-size: 1.2rem;
+}
+
+.habilidade {
+    background-color: var(--cor-primaria);
+    color: #fff;
+    padding: var(--padding-padrao);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/*------------------------------ Seção de Hobbies --------------------------------*/
+
+.hobbies {
+    padding: var(--padding-padrao);
+    background-color: var(--cor-de-fundo-menu);
+    border-radius: 8px;
+    margin-top: var(--padding-padrao);
+}
+
+.hobbies__titulo {
+    font-size: 1.75rem;
+    color: var(--cor-primaria);
+}
+
+.hobbies__lista {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20%;
+    margin-top: var(--padding-padrao);
+    font-size: 1.2rem;
+}
+
+.hobby {
+    background-color: var(--cor-secundaria);
+    color: #fff;
+    padding: var(--padding-padrao);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/*------------------------------ Seção Formção Acadêmica --------------------------------*/
+
+.formacao {
+    padding: var(--padding-padrao);
+    background-color: var(--cor-de-fundo-menu);
+    border-radius: 8px;
+    margin-top: var(--padding-padrao);
+}
+
+.formacao__titulo {
+    font-size: 1.75rem;
+    color: var(--cor-primaria);
+}
+
+.formacao__lista {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20%;
+    margin-top: var(--padding-padrao);
+    /* *font-size: 1rem; */
+}
+
+
+/* .formacao {
+    background-color: var(--cor-secundaria);
+    color: #fff;
+    padding: var(--padding-padrao);
+    border-radius: 4px;
+    font-size: 1rem;
+} */
+
+/*------------------------------ Seção de Projetos --------------------------------*/
+
+/*
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--padding-padrao);
+    padding: var(--padding-padrao);
+}
+
+.projeto {
+    background-color: var(--cor-de-fundo-menu);
+    padding: var(--padding-padrao);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projeto__titulo {
+    font-size: 1.5rem;
+    color: var(--cor-secundaria);
+}
+
+.projeto__descricao {
+    font-size: 1rem;
+    color: var(--cor-texto);
+    margin-top: var(--padding-padrao);
+}*/
+
+
+
+/*------------------------------ Seção de Contato ---------------------------------*/
+
+.contato {
+    padding: var(--padding-padrao);
+    background-color: var(--cor-de-fundo-menu);
+    text-align: center;
+}
+
+.contato__titulo {
+    font-size: 1.75rem;
+    color: var(--cor-primaria);
+}
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-padrao);
+    margin-top: var(--padding-padrao);
+}
+
+.contato__input, .contato__textarea {
+    padding: var(--padding-padrao);
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contato__botao {
+    padding: var(--padding-padrao);
+    background-color: var(--cor-primaria);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contato__botao:hover {
+    background-color: var(--cor-terciaria);
+}
+
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+/* Tablets e telas maiores */
+
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        max-width: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+       
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Telas grandes */
+@media (min-width: 1024px) {
+    /* Aqui você pode ajustar ainda mais o design para telas grandes */
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+        
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+}
