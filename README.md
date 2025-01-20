@@ -7,7 +7,9 @@ O ONE é um programa de educação e empregabilidade com objetivo social de capa
 
 ## Funcionalidades
 
-- Apresentação de projetos pessoais
+- Apresentação de projetos pessoais (será incorporada posteriormente)
 - Seção sobre mim
 - Formulário de contato
 - Links para redes sociais
+
+Você pode visualizar o projeto através deste [link](https://aquino27rj.github.io/Projeto-Inicial_Portfolio/).
